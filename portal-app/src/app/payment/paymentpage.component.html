@@ -1,0 +1,55 @@
+
+  <style>
+    .button {
+      display: block;
+      width: 150px;
+      height: 50px;
+      background: darkmagenta;
+      padding: 10px;
+      padding-top: 8px;
+      text-align: center;
+      border-radius: 5px;
+      color: white;
+      font-weight: bold;
+      text-decoration: none;
+      font-size: 18px;
+  }
+ 
+  .button1 {
+      display: block;
+      width: 150px;
+      padding-top: 8px;
+      height: 50px;
+      background:palevioletred;
+      padding: 10px;
+      text-align: center;
+      border-radius: 5px;
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+  }
+  .gap{
+    height: 200px;
+  }
+  
+    </style>
+    <body style="background-image: url('./assets/img10.jpg');background-repeat: no-repeat;background-size: 100%; height: 800px; margin: 0px;">
+    <div>
+      <table style="width: 1000px; margin-left: 150px; margin-top: 10px; padding-top: 10px;">
+          <tr>
+              <td colspan="4" style="padding-left: 950px;"><br>
+                  <a class="button1" style="margin-left:10px; float:left;" routerLink="/index">Logout</a>
+              </td>
+            </tr>
+        <tr class="gap">
+    <td><a class="button" style="margin-left:20px; float:left;opacity: 10px;" routerLink="/addpayment">Add Payment</a></td>
+    <td><a class="button" style="margin-left:10px; float:left;" routerLink="/payment">Payment</a></td>
+  
+  </tr>
+  
+ 
+  </table>
+    <br/>
+    <router-outlet></router-outlet>
+  </div>
+  </body>

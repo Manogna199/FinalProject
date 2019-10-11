@@ -1,0 +1,68 @@
+
+  <style>
+    .button {
+      display: block;
+      width: 150px;
+      height: 50px;
+      background: palevioletred;
+      padding: 30px;
+      padding-top: 8px;
+      text-align: center;
+      border-radius: 5px;
+      color: white;
+      font-weight: bold;
+      text-decoration: none;
+      font-size: 18px;
+  }
+  
+
+  .button2 {
+      display: block;
+      width: 150px;
+      padding-top: 8px;
+      height: 50px;
+      background:skyblue;
+      padding: 10px;
+      text-align: center;
+      border-radius: 5px;
+      
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+  }
+  .gap{
+    height: 200px;
+  }
+  
+    </style>
+    <body style="background-image: url('./assets/img11.jpg');background-repeat: no-repeat; height:1000px;background-size: 100%; margin: 0px;">
+    <div>
+      <table style="width: 1000px; margin-left: 150px; margin-top: 10px; padding-top: 10px;">
+          <tr>
+              <td colspan="4" style="padding-left: 950px;"><br>
+                  <a class="button2" style="margin-left:10px; float:left;" routerLink="/index">Logout</a>
+              </td>
+            </tr>
+        <tr class="gap">
+    
+    <td><a class="button" style="margin-left:10px; " routerLink="/userpage"> User</a></td>
+    <td><a class="button" style="margin-left:10px; " routerLink="/mentorpage">Mentor</a></td>
+    
+  </tr>
+  
+  <tr class="gap">
+   
+    <td><a class="button" style="margin-left:10px; " routerLink="/technologiespage">Technologies</a></td>
+   
+   
+   
+    <td><a class="button" style="margin-left:10px; float:left;" routerLink="/paymentpage">Payment</a></td>
+
+  
+  </tr>
+  
+  </table>
+    <br/>
+    <router-outlet></router-outlet>
+  </div>
+  </body>

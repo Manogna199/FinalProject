@@ -1,0 +1,38 @@
+
+
+<body style="background-image: url('./assets/img7.jpg');background-size: 100%; height: 850px; margin: 0px;">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
+        <div class="card card-signin my-5">
+          <div class ="card-body">
+            
+              
+              <img src="./assets/images.jpg" width="30%" height="100%" style="margin-left:140px; margin-top: 20px;">
+              
+            <h2 class="card-title text-center">Login</h2>
+            <form class="form-signin">
+              
+              <div class="form-group">
+                <label for="usr">Name</label>
+                <input type="text" [(ngModel)]="user.email" name="uname" class="form-control"  (input)="usr = $event.target.value"  id="usr">
+              </div>
+
+              <div class="form-group">
+                <label for="pwd">Password</label>
+                <input type="password" [(ngModel)]="user.password" name="pass" (input)="pwd = $event.target.value"  class="form-control" id="pwd">
+              </div>
+              <input type="button" name="" (click)="searchUser()" style="width:200px; margin-left: 110px;" class="btn btn-lg btn-primary btn-block text-uppercase"  value="Log in"><br>
+               <!-- </form> -->
+<a routerLink='/adduser' >
+  <button class="btn btn-lg btn-primary btn-block text-uppercase" type="submit">SignUp</button> </a><br>
+
+<!-- <b>note:Username:User || Password:User</b> -->
+<!-- <router-outlet></router-outlet> -->
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>

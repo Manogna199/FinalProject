@@ -1,0 +1,73 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+<body style="background-image: url('./assets/img25.jpg'); height: 780px; background-repeat: no-repeat; background-size: 100%; ">
+	<h1 class="text-center" style="color: white;">Welcome to My App </h1>
+<div class="container" style="width: 100%">
+	<!--<div style="margin-top: 200px;margin-left: 10px;">
+	<div class="" style="width: 500px;height: 50px;background-color: tomato;margin-top: 10px;border-radius: 10px;">
+		<p style="padding: 5px;color: green;font-size: 30px;">Empowerment</p>
+	</div>
+	<div class="" style="width: 500px;height:50px;background-color: tomato;margin-top: 30px;border-radius: 10px;">
+		<p style="padding: 5px;color: blue;font-size: 30px;">Concentration</p>
+	</div>
+	<div class="" style="width: 500px;height: 50px; background-color: tomato;margin-top: 50px;border-radius: 10px;">
+		<p style="padding: 5px;color: white;font-size: 30px;">Learning</p>
+	</div>
+  </div>-->
+
+  	
+
+
+  <div class="container" style="margin-left: 100%; margin-top: 5px; "><br>
+    <a routerLink="/adminlogin"><button id="btn" class="inputb" style="border-radius: 25px; margin-left: -800px; margin-top: 0px; float: left;">Admin </button></a>	<!-- <button class="inputb" type="button" name="" onclick="user()" style="margin-left: -700px; margin-top: 200px; float: left;">User login</button><br> -->
+		<a routerLink="/userlogin"><button id="btn" class="inputb" style="border-radius: 25px; margin-left: -550px; margin-top: 0px; float: left;">User </button></a>
+		<a routerLink="/mentorlogin"><button id="btn" class="inputb"  style="border-radius: 25px; margin-left:  -350px; margin-top: -0px; float: left;">Mentor </button></a>
+		
+ 	</div>
+	</div>
+
+</body>
+
+<style type="text/css">
+.inputb
+	{
+		background-color: rgb(193, 18, 199);
+		color:white;
+		height: 40px;
+		border: 1px solid blue;
+		width: 100px;
+		
+		/*padding-bottom: 10px;*/
+		border-radius: 2px;
+		width: 300px;
+		margin-bottom: 10px;
+	}
+	.inputb:hover{
+		background-color: #808080;
+	}
+</style>
+<script type="text/javascript">
+	function user()
+	{
+		location.href = "userlogin.html";
+	}
+	function mentor()
+	{
+		location.href = 'mentorlogin.html';
+	}
+	function admin()
+	{
+		location.href = 'adminlogin.html';
+	}
+</script>
+<router-outlet></router-outlet>
+</html>
